@@ -1,0 +1,20 @@
+## 一定注意写法
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/springboot?serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver  # 加cj每次启动控制台不会报红色提示
+
+# 开启驼峰命名法
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+
+# 指定包打印sql语句到控制台
+logging:
+  level:
+    cn.dyh.springboot9cache.dao: debug
+
+# 可以在控制台打印程序启动需要加载那些自动配置类
+# debug: true
